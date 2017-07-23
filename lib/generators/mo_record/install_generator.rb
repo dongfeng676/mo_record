@@ -11,6 +11,10 @@ module MoRecord
       def copy_migration
         migration_template 'install.rb', 'db/migrate/install_logged_mo.rb'
       end
+
+      def self.next_migration_number(dir)
+        Time.now.utc.strftime("%Y%m%d%H%M%S")
+      end
     end
   end
 end
