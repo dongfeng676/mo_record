@@ -1,6 +1,7 @@
 require "mo_record/version"
 require "mo_record/configuration"
 require "mo_record/logged"
+require "mo_record/logged_mo"
 require "active_record"
 
 module MoRecord
