@@ -1,3 +1,6 @@
-class LoggedMo < ::ActiveRecord::Base
-  belongs_to :target, polymorphic: true
+module MoRecord
+  class LoggedMo < ::ActiveRecord::Base
+    belongs_to :target, polymorphic: true
+  end
 end
+

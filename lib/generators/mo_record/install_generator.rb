@@ -9,7 +9,7 @@ module MoRecord
       source_root File.expand_path("../templates", __FILE__)
 
       def copy_migration
-        migration_template 'install.rb', 'db/migrate/install_logged_mo.rb'
+        migration_template 'install.rb', 'db/migrate/create_logged_mos.rb'
       end
 
       def self.next_migration_number(dir)
