@@ -9,7 +9,7 @@ module MoRecord
 
   # example 
   # Module.setup do |config|
-  #   config.version = 10
+  #   config.version_count = 10
   # end
   def self.setup(&_block)
     yield(self)
