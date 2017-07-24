@@ -41,13 +41,7 @@ module MoRecord
         end
       end
 
-      ["from_version","to_version"].each do |method_name|
-        define_method method_name do |version, number = nil|
-          fetch_mos_method(method_name, number)
-        end
-      end
-
-      ["from_util","to_util"].each do |method_name|
+      ["from_version","to_version","from_util","to_util"].each do |method_name|
         define_method method_name do |version, number = nil|
           fetch_mos_method(method_name, number)
         end
